@@ -1,0 +1,105 @@
+div {
+	border-sizing: border-box;
+}
+
+body {
+	font-family: Ubuntu, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background:url(img/1.png) no-repeat center top / cover;
+	height: 650px;
+}
+
+.menu > menu {
+	position: relative;
+    overflow: hidden;
+    /*height: 40px;
+    margin: 20px 0;*/
+}
+
+.menu > menu >ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    float: left;
+    font: 14px Arial, Helvetica, sans-serif;
+    height: 40px;
+  }
+
+.menu > menu > ul > li {
+	position: relative;
+    left: -50%;
+    float: left;
+    margin: 0 10px;
+    height: 40px;
+    font-size: 16px;
+
+}
+.menu > menu > ul > li > a {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 150px;
+	height: 40px;
+	text-align: justify;
+	line-height: 40px;
+	padding: 0 15px;
+	transition: .3s;
+}
+
+.menu > menu > ul > li > a:hover {
+	background-color: 	#E7FEFF;
+	color: #2243B6;
+}
+
+.menu > menu > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    float: left;
+    font: 14px Arial, Helvetica, sans-serif;
+    height: 40px
+}
+
+.container {
+	width :650px;
+	margin : 0 auto;
+}
+
+.titles_first{
+	font-size: 36px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: left;
+	margin-left: 900px;
+	margin-top: 250px;
+}
+h2{
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: left;
+	margin-left: 910px;
+	margin-top: 15px;
+
+}
+.image> img{
+	position: relative;
+	left: 250px;
+	bottom: 250px;
+
+}
+p{
+	margin-left: 240px;
+	margin-top: -430px;
+	color: #fff;
+	font-size: 30px;
+}

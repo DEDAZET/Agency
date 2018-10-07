@@ -3,7 +3,7 @@ div {
 }
 
 body {
-	font-family: Ubuntu, sans-serif;
+	font-family: Arial, sans-serif;
 	padding: 0;
 	margin: 0;
 }
@@ -11,13 +11,16 @@ body {
 header {
 	background:url(img/1.png) no-repeat center top / cover;
 	height: 650px;
+
 }
 
 .menu > menu {
 	position: relative;
     overflow: hidden;
-    /*height: 40px;
-    margin: 20px 0;*/
+    width: 100%;
+    padding: 0;
+    margin: 0;
+	z-index: 2;
 }
 
 .menu > menu >ul {
@@ -28,7 +31,7 @@ header {
     left: 50%;
     float: left;
     font: 14px Arial, Helvetica, sans-serif;
-    height: 40px;
+    height: 0px;
   }
 
 .menu > menu > ul > li {
@@ -80,6 +83,8 @@ header {
 	text-align: left;
 	margin-left: 900px;
 	margin-top: 250px;
+	position: relative;
+	z-index: 2;
 }
 h2{
 	font-size: 48px;
@@ -89,6 +94,8 @@ h2{
 	text-align: left;
 	margin-left: 910px;
 	margin-top: 15px;
+	position: relative;
+	z-index: 2;
 
 }
 .image> img{
@@ -100,6 +107,120 @@ h2{
 p{
 	margin-left: 240px;
 	margin-top: -430px;
-	color: #fff;
+	color: black;
 	font-size: 30px;
+}
+.cosoi-block{
+  background-color: rgb(255, 255, 255);
+  opacity: 0.302;
+  position: absolute;
+  left: 850px;
+  top: -70px;
+  width: 500px;
+  height: 720px;
+  z-index: 1;
+  transform: skewX(-25deg);
+}
+
+/* Первый контейнер */
+.container_first{
+	background-color: white;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	z-index: 2;
+}
+/* Текст наложения */
+.container_first > h2{
+  font-size: 60px;
+  font-family: Arial;
+  font-weight: bold;
+  color: rgba(74, 64, 63, 0.102);
+  font-weight: bold;
+  line-height: 0.625;
+  text-align: center;
+  -moz-transform: matrix( 2.19858357158673,0,0,2.19858357158673,0,0);
+  -webkit-transform: matrix( 2.19858357158673,0,0,2.19858357158673,0,0);
+  -ms-transform: matrix( 2.19858357158673,0,0,2.19858357158673,0,0);
+  position: absolute;
+  left: -470px;
+  z-index: 1;
+}
+
+/*Текст 2-ого блока*/
+.container_first > p{
+	margin-top: 150px;
+	margin-left: 280px;
+	color: black;
+	font-size: 36px;
+	z-index: 2;
+}
+
+/* контейнер изображений */
+
+.container_first > .img_container{
+	width: 270px;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 70px;
+}
+
+.img_container > h4{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.container_first > .img_container > .item_1 {
+	margin-left: -520px;
+}
+.container_first > .img_container > .item_2 {
+	margin-left: 200px;
+}
+.container_first > .img_container > .item_3 {
+	margin-left: 200px;
+}
+
+/* 3-ья секция */
+
+.container_second{
+background:url(img/2.png) no-repeat center top / cover;
+	height: 720px;
+}
+
+.container_second > p {
+  font-size: 48px;
+  font-family: Arial;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 100px;
+  top: 1687.568px;
+}
+
+.button{
+background-color: rgb(21, 80, 91);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    border-radius: 4px;
+    margin-left: 650px;
+    margin-top: 500px;
+    transition: .3s;
+    z-index: 2;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+     z-index: 2;
 }
